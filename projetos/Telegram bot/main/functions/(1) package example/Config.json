@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "bs4": "BeautifulSoup4"
+  }, 
+  "functions": {
+    "Echo": {
+      "triggers": [
+        "w&echo"
+      ],
+      "permission": 0,
+      "flags": [],
+      "category": null,
+      "documentation": []
+    }, 
+    "GetImage": {
+      "triggers": [
+        "c&getimage"
+      ],
+      "permission": 0,
+      "flags": [],
+      "category": null,
+      "documentation": []
+    } 
+  }
+}
