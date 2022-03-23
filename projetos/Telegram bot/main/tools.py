@@ -11,9 +11,10 @@ def CreateDirectories(directory_list):
 def InstallDependencies(dependency_list):
   try:
     for module in dependency_list:
-      globals()[module] = importlib.import_module(module)
+      globals()[module[1]] = importlib.import_module(module[1])
   except ModuleNotFoundError:
-    check_call([sys.executable, "-m", "pip", "install", "--target=main/dependencies", "--upgrade", ])
+    install_list = map(lambda )
+    check_call([sys.executable, "-m", "pip", "install", "--target=main/dependencies", "--upgrade"] + map())
     globals()["telebot"] = importlib.import_module("telebot")
   
 
